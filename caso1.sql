@@ -33,7 +33,7 @@ CREATE TABLE `ejercicios` (
   PRIMARY KEY (`Consecutivo`),
   KEY `fk_tipo` (`TipoEjercicio`),
   CONSTRAINT `fk_tipo` FOREIGN KEY (`TipoEjercicio`) REFERENCES `tiposejercicio` (`TipoEjercicio`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -42,6 +42,7 @@ CREATE TABLE `ejercicios` (
 
 LOCK TABLES `ejercicios` WRITE;
 /*!40000 ALTER TABLE `ejercicios` DISABLE KEYS */;
+INSERT INTO `ejercicios` VALUES (1,'Jose Daniel','2026-02-26 02:48:10',3500.00,2),(2,'Genesis','2026-02-26 02:48:40',2000.00,3),(3,'Andres','2026-02-26 02:49:04',5000.00,2),(4,'Fiorella','2026-02-26 02:49:22',3000.00,2);
 /*!40000 ALTER TABLE `ejercicios` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -155,4 +156,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-25 19:12:27
+-- Dump completed on 2026-02-25 19:59:17
